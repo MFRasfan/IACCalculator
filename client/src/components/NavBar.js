@@ -55,14 +55,7 @@ const NavBar = () => {
               </NavItem>
               {isAuthenticated && (
                 <NavItem>
-                  <NavLink
-                    tag={RouterNavLink}
-                    to="/books"
-                    exact
-                    activeClassName="router-link-exact-active"
-                  >
-                    Books
-                  </NavLink>
+                  
                   <NavLink
                     tag={RouterNavLink}
                     to="/price"
@@ -165,9 +158,10 @@ const NavBar = () => {
                     to="/price/:id"
                     activeClassName="router-link-exact-active"
                   >
-                    Profile
+                    Price
                   </RouterNavLink>
                 </NavItem>
+               
                 <NavItem>
                   <FontAwesomeIcon icon="power-off" className="mr-3" />
                   <RouterNavLink

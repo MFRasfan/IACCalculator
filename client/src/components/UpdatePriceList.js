@@ -215,7 +215,7 @@ class Price extends Component {
                   <ListItem key={prices._id}>
                     <Link to={"/price/" + prices._id}>
                       <strong>
-                        {prices.Category} by {prices.Material}
+                        {prices.Category} {prices.Material}
                       </strong>
                     </Link>
                     <DeleteBtn onClick={() => this.deletePrice(prices._id)} />

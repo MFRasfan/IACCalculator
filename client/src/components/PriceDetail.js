@@ -23,7 +23,7 @@ class PriceDetail extends Component {
           <Col size="md-12">
             <Jumbotron>
               <h1>
-                {this.state.prices.Category} by {this.state.prices.Material}
+                {this.state.prices.Category}  {this.state.prices.Material}
               </h1>
             </Jumbotron>
           </Col>
@@ -31,7 +31,7 @@ class PriceDetail extends Component {
         <Row>
           <Col size="md-10 md-offset-1">
             <article>
-              <h1>Synopsis</h1>
+              <h1>Price</h1>
               <p>
                 {this.state.prices.Finishing2}
               </p>
@@ -40,7 +40,7 @@ class PriceDetail extends Component {
         </Row>
         <Row>
           <Col size="md-2">
-            <Link to="/">← Back to Authors</Link>
+            <Link to="/">← Back to Home</Link>
           </Col>
         </Row>
       </Container>
