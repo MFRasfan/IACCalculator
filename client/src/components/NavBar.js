@@ -63,7 +63,16 @@ const NavBar = () => {
                   >
                     Books
                   </NavLink>
+                  <NavLink
+                    tag={RouterNavLink}
+                    to="/price"
+                    exact
+                    activeClassName="router-link-exact-active"
+                  >
+                    Price List
+                  </NavLink>
                 </NavItem>
+                
               )}
             </Nav>
             <Nav className="d-none d-md-block" navbar>
