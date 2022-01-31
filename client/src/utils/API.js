@@ -23,9 +23,9 @@ export default {
     return axios.get("/api/price");
   },
   // Gets the price with the given id
-  getPrice: function(id) {
-    return axios.get("/api/price/" + id);
-  },
+  // getPrice: function(id) {
+  //   return axios.get("/api/price/" + id);
+  // },
   // Deletes the price with the given id
   deletePrice: function(id) {
     return axios.delete("/api/price/" + id);

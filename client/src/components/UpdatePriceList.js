@@ -104,7 +104,7 @@ class Price extends Component {
         <Row>
           <Col size="md-6">
             <Jumbotron>
-              <h1>Omnify Price Update Table</h1>
+              <h1>IAC Price Update Table</h1>
             </Jumbotron>
             <form>
             <Input
@@ -205,27 +205,27 @@ class Price extends Component {
               </FormBtn>
             </form>
           </Col>
-          {/* <Col size="md-6 sm-12">
+          <Col size="md-6 sm-12">
             <Jumbotron>
-              <h1>Ominify Price List</h1>
+              <h1>IAC Price List</h1>
             </Jumbotron>
-            {this.state.books.length ? (
+            {this.state.price.length ? (
               <List>
-                {this.state.books.map(book => (
-                  <ListItem key={book._id}>
-                    <Link to={"/books/" + book._id}>
+                {this.state.price.map(price => (
+                  <ListItem key={price._id}>
+                    <Link to={"/price/" + price._id}>
                       <strong>
-                        {book.title} by {book.author}
+                        {price.title} by {price.author}
                       </strong>
                     </Link>
-                    <DeleteBtn onClick={() => this.deleteBook(book._id)} />
+                    <DeleteBtn onClick={() => this.deletePrice(price._id)} />
                   </ListItem>
                 ))}
               </List>
             ) : (
               <h3>No Results to Display</h3>
             )}
-          </Col> */}
+          </Col>
         </Row>
       </Container>
     );
