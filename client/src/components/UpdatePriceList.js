@@ -104,7 +104,7 @@ class Price extends Component {
         <Row>
           <Col size="md-6">
             <Jumbotron>
-              <h1>IAC Price Update Table</h1>
+              <h1>Add New Product</h1>
             </Jumbotron>
             <form>
             <Input
@@ -207,7 +207,7 @@ class Price extends Component {
           </Col>
           <Col size="md-6 sm-12">
             <Jumbotron>
-              <h1>IAC Price List</h1>
+              <h1>Products Added</h1>
             </Jumbotron>
             {this.state.price.length ? (
               <List>

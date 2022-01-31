@@ -62,7 +62,21 @@ const NavBar = () => {
                     exact
                     activeClassName="router-link-exact-active"
                   >
-                    Price List
+                    Add Product
+                  </NavLink>
+                </NavItem>
+                
+              )}
+                {isAuthenticated && (
+                <NavItem>
+                  
+                  <NavLink
+                    tag={RouterNavLink}
+                    to="/price"
+                    exact
+                    activeClassName="router-link-exact-active"
+                  >
+                    View All Products
                   </NavLink>
                 </NavItem>
                 
