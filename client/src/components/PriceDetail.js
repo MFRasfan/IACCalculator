@@ -1,18 +1,18 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Col, Row, Container } from "../components/Grid";
-import Jumbotron from "../components/Jumbotron";
+import { Col, Row, Container } from "./Grid";
+import Jumbotron from "./Jumbotron";
 import API from "../utils/API";
 
-class Detail extends Component {
+class PriceDetail extends Component {
   state = {
-    book: {}
+    prices: {}
   };
   // When this component mounts, grab the book with the _id of this.props.match.params.id
   // e.g. localhost:3000/books/599dcb67f0f16317844583fc
   componentDidMount() {
-    API.getBook(this.props.match.params.id)
-      .then(res => this.setState({ book: res.data }))
+    API.getPrices(this.props.match.params.id)
+      .then(res => this.setState({ prices: res.data }))
       .catch(err => console.log(err));
   }
 
@@ -23,7 +23,7 @@ class Detail extends Component {
           <Col size="md-12">
             <Jumbotron>
               <h1>
-                {this.state.book.title} by {this.state.book.author}
+                {this.state.prices.Category} by {this.state.prices.Material}
               </h1>
             </Jumbotron>
           </Col>
@@ -33,7 +33,7 @@ class Detail extends Component {
             <article>
               <h1>Synopsis</h1>
               <p>
-                {this.state.book.synopsis}
+                {this.state.prices.Finishing2}
               </p>
             </article>
           </Col>
@@ -48,4 +48,4 @@ class Detail extends Component {
   }
 }
 
-export default Detail;
+export default PriceDetail;

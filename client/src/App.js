@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Books from "./components/Books";
 import Detail from "./components/Detail";
+import PriceDetail from "./components/PriceDetail";
 import UpdatePriceList from "./components/UpdatePriceList";
 import { Container } from "reactstrap";
 import Loading from "./components/Loading";
@@ -38,11 +39,11 @@ const App = () => {
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/profile" component={Profile} />
-            {/* <Route path="/external-api" component={ExternalApi} /> */}
-            {/* <Route exact path="/" component={Books} /> */}
             <Route exact path="/books" component={Books} />
             <Route exact path="/price" component={UpdatePriceList} />
            <Route exact path="/books/:id" component={Detail} />
+           <Route exact path="/price/:id" component={PriceDetail} />
+           
           </Switch>
         </Container>
         <Footer />

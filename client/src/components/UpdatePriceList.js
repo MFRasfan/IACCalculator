@@ -211,14 +211,14 @@ class Price extends Component {
             </Jumbotron>
             {this.state.price.length ? (
               <List>
-                {this.state.price.map(price => (
-                  <ListItem key={price._id}>
-                    <Link to={"/price/" + price._id}>
+                {this.state.price.map(prices => (
+                  <ListItem key={prices._id}>
+                    <Link to={"/price/" + prices._id}>
                       <strong>
-                        {price.title} by {price.author}
+                        {prices.Category} by {prices.Material}
                       </strong>
                     </Link>
-                    <DeleteBtn onClick={() => this.deletePrice(price._id)} />
+                    <DeleteBtn onClick={() => this.deletePrice(prices._id)} />
                   </ListItem>
                 ))}
               </List>
