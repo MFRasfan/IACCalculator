@@ -1,20 +1,60 @@
 import React from "react";
+import API from "../utils/API";
+import { Link } from "react-router-dom";
+
+
+
 
 class Calculator extends React.Component {
+
+   
     state = {
+    price: [],
       Width: 0,
       Height: 0,
       Quantity: 0,
+      Material: "",
     }
+
+    componentDidMount() {
+        this.loadPrice();
+      }
+
+      loadPrice = () => {
+        API.getPrice()
+          .then(res =>
+            this.setState({ price: res.data,   
+        
+        Material: "",
+        })
+          )
+          .catch(err => console.log(err));
+      };
+
+
     render() {
+
+        let optionItems = this.state.price.map(prices =>
+                <option key={prices.Material}>{prices.Material}</option>
+            );
   
       return (
 
+       
 
         <div className="container">
         <form className="container">
           <table className="table table-bordered">
             <tbody>
+            <tr>
+              <td>Product</td>
+              <td>
+            <select name="Width" id="Width"className="form-control">
+                {optionItems}
+             </select>
+              
+              </td>
+            </tr>
             <tr>
               <td>Width</td>
               <td>

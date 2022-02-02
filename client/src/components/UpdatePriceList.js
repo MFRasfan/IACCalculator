@@ -201,7 +201,7 @@ class Price extends Component {
                 disabled={!(this.state.Category && this.state.Material)}
                 onClick={this.handleFormSubmit}
               >
-                Submit Price
+                Add Product
               </FormBtn>
             </form>
           </Col>
