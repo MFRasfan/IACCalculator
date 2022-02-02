@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "./Grid";
 import { List, ListItem } from "./List";
 import { Table } from 'react-bootstrap';
+import { Input,FormBtn } from "./Form";
+
 // import { Container, Row, Col } from "reactstrap";
 import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
 
@@ -131,6 +133,11 @@ class AllProducts extends Component {
             ) : (
               <h3>No Results to Display</h3>
             )}
+          </Col>
+        </Row>
+        <Row>
+          <Col size="md-2">
+            <Link to="/">← Back to Home</Link>
           </Col>
         </Row>
       </Container>

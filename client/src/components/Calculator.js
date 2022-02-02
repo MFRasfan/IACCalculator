@@ -1,5 +1,7 @@
 import React from "react";
 import API from "../utils/API";
+import { Col, Row, Container } from "./Grid";
+import Jumbotron from "./Jumbotron";
 
 
 class Calculator extends React.Component {
@@ -38,6 +40,9 @@ class Calculator extends React.Component {
       return (
 
         <div className="container">
+           <Jumbotron>
+              <h1>Pricing Calculator</h1>
+            </Jumbotron>
         <form className="container">
           <table className="table table-bordered">
             <tbody>
@@ -97,10 +102,13 @@ class Calculator extends React.Component {
               value="Get Price"/>
           </div>
         </form>
+        
       </div>
         
      )
+     
     }
+    
      alpha = (ev) => {
       this.setState({
               [ev.target.name]: ev.target.value

@@ -8,7 +8,7 @@ const Hero = () => (
     <h1 className="mb-4">IAC Pricing Portal</h1>
 
     <p className="lead">
-      This is an application for Customers to get Product Pricing 
+      This is an Application for Customers to get Product Pricing 
     </p>
   </div>
 );
