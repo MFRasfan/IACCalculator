@@ -1,8 +1,5 @@
 import React from "react";
 import API from "../utils/API";
-import { Link } from "react-router-dom";
-
-
 
 
 class Calculator extends React.Component {
@@ -40,17 +37,28 @@ class Calculator extends React.Component {
   
       return (
 
-       
-
         <div className="container">
         <form className="container">
           <table className="table table-bordered">
             <tbody>
             <tr>
-              <td>Product</td>
+              <td>Material</td>
               <td>
             <select name="Width" id="Width"className="form-control">
                 {optionItems}
+             </select>
+              
+              </td>
+            </tr>
+            <tr>
+              <td>Finishing</td>
+              <td>
+            <select name="Width" id="Width"className="form-control">
+                <option selected value="no">No</option>
+                <option value="hem">Hem</option>
+                <option value="seg">Seg</option>
+                <option value="velcro">Velcro</option>
+                <option value="webbing">Webbing</option>
              </select>
               
               </td>

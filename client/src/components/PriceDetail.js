@@ -35,6 +35,9 @@ class PriceDetail extends Component {
               <p>
                 {this.state.prices.Finishing2}
               </p>
+              <p>
+                {this.state.prices.Finishing1}
+              </p>
             </article>
           </Col>
         </Row>
