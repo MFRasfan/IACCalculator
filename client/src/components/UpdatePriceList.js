@@ -123,61 +123,61 @@ class Price extends Component {
                 value={this.state.Sqft1}
                 onChange={this.handleInputChange}
                 name="Sqft1"
-                placeholder="Sqft $0-3.99 (Required)"
+                placeholder="Sqft 0-3.99 (Required)"
               />
               <Input
                 value={this.state.Sqft2}
                 onChange={this.handleInputChange}
                 name="Sqft2"
-                placeholder="Sqft $4-9.99 (Required)"
+                placeholder="Sqft 4-9.99 (Required)"
               />
               <Input
                 value={this.state.Sqft3}
                 onChange={this.handleInputChange}
                 name="Sqft3"
-                placeholder="Sqft $10-19.99 (Required)"
+                placeholder="Sqft 10-19.99 (Required)"
               />
               <Input
                 value={this.state.Sqft4}
                 onChange={this.handleInputChange}
                 name="Sqft4"
-                placeholder="Sqft $20-39.99 (Required)"
+                placeholder="Sqft 20-39.99 (Required)"
               />
               <Input
                 value={this.state.Sqft5}
                 onChange={this.handleInputChange}
                 name="Sqft5"
-                placeholder="Sqft 4$0-99.99 (Required)"
+                placeholder="Sqft 40-99.99 (Required)"
               />
               <Input
                 value={this.state.Sqft6}
                 onChange={this.handleInputChange}
                 name="Sqft6"
-                placeholder="Sqft $100-199.99 (Required)"
+                placeholder="Sqft 100-199.99 (Required)"
               />
               <Input
                 value={this.state.Sqft7}
                 onChange={this.handleInputChange}
                 name="Sqft7"
-                placeholder="Sqft $200-999.99 (Required)"
+                placeholder="Sqft 200-999.99 (Required)"
               />
               <Input
                 value={this.state.Sqft8}
                 onChange={this.handleInputChange}
                 name="Sqft8"
-                placeholder="Sqft $1000-2999.99 (Required)"
+                placeholder="Sqft 1000-2999.99 (Required)"
               />
               <Input
                 value={this.state.Sqft9}
                 onChange={this.handleInputChange}
                 name="Sqft9"
-                placeholder="Sqft $3000-4999.99 (Required)"
+                placeholder="Sqft 3000-4999.99 (Required)"
               />
                <Input
                 value={this.state.Sqft10}
                 onChange={this.handleInputChange}
                 name="Sqft10"
-                placeholder="Sqft $5000+ (Required)"
+                placeholder="Sqft 5000+ (Required)"
               />
               <Input
                 value={this.state.Finishing1}
@@ -218,7 +218,7 @@ class Price extends Component {
                         {prices.Category} {prices.Material}
                       </strong>
                     </Link>
-                    <DeleteBtn onClick={() => this.deletePrice(prices._id)} />
+                    {/* <DeleteBtn onClick={() => this.deletePrice(prices._id)} /> */}
                   </ListItem>
                 ))}
               </List>

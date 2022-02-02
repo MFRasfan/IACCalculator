@@ -72,7 +72,7 @@ const NavBar = () => {
                   
                   <NavLink
                     tag={RouterNavLink}
-                    to="/price"
+                    to="/allproducts"
                     exact
                     activeClassName="router-link-exact-active"
                   >
