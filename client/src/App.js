@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import PriceDetail from "./components/PriceDetail";
 import UpdatePriceList from "./components/UpdatePriceList";
+import Calculator from "./components/Calculator";
 import { Container } from "reactstrap";
 import Loading from "./components/Loading";
 import NavBar from "./components/NavBar";
@@ -38,6 +39,8 @@ const App = () => {
             <Route path="/profile" component={Profile} />
             <Route exact path="/price" component={UpdatePriceList} />  
             <Route exact path="/price/:id" component={PriceDetail} />
+            <Route exact path="/calculator" component={Calculator} />
+
           </Switch>
         </Container>
         <Footer />
